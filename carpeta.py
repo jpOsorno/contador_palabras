@@ -18,7 +18,7 @@ class Carpeta:
       if os.path.isfile(ruta_archivo):
         extension = os.path.splitext(archivo)[1].lower()
         if extension in ('.txt', '.xml', '.json', '.csv'):
-          self.archivos.append(Archivo(ruta_archivo))
-          return True
+          self.archivos.append(Archivo(ruta_archivo)) 
         else: 
-            return False
+          return False
+    return True    
